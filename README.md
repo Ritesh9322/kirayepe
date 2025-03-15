@@ -12,17 +12,24 @@ Welcome to **ReBazaar** – a web application for buying and selling secondhand 
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder Structure 📂
 
 ```
 backend/
-├── config/               # ⚙️ Configuration files
-├── middleware/           # 🔑 Middleware for authentication
+├── config/               # ⚙️ Configuration files 🛠️
+│   ├── db.js             # 🛢️ Database connection
+├── middleware/           # 🔒 Middleware for authentication & error handling
+│   ├── auth.js           # 🛡️ Protect routes
 ├── models/               # 🗂️ Mongoose models
-├── routes/               # 🚏 API routes
+│   ├── User.js           # 👤 User model schema
+│   ├── Product.js        # 📦 Product model schema
+├── routes/               # 🛣️ API routes
+│   ├── authRoutes.js     # 🔐 Authentication routes
+│   ├── productRoutes.js  # 🏷️ Product-related routes
 ├── .env                  # 🌍 Environment variables
 ├── package.json          # 📦 Backend dependencies
-└── server.js             # 🚀 Main server file
+├── server.js             # 🚀 Main server file (Entry point)
+
 
 frontend/
 ├── src/                  # 🎨 Source files for Angular application
@@ -60,7 +67,7 @@ npm install
 ```ini
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
-PORT=5000
+PORT=3000
 ```
 
 ### 🎨 Frontend Setup
@@ -74,10 +81,20 @@ npm install
 
 ## 🎯 Usage
 
-### 🔥 Start the backend server
+### Start the backend server
+
+You can start the backend server using one of the following commands:
+
+For production:
 ```bash
 cd backend
 node server.js
+```
+
+For development (auto-restart on changes):
+```bash
+cd backend
+nodemon server.js
 ```
 
 ### 🚀 Start the frontend application
@@ -130,19 +147,16 @@ Here are some screenshots of **ReBazaar**:
 ![Homepage Screenshot](./frontend/public/screenshots/homepage.png)
 
 ### 🔐 Login Page
-![Login Screenshot](screenshots/login.png)
+![Login Screenshot](./frontend/public/screenshots/login.png)
 
 ### 📝 Register Page
-![Register Screenshot](screenshots/register.png)
+![Register Screenshot](./frontend/public/screenshots/signup.png)
 
 ### 🛒 Product Listings
-![Product Listings Screenshot](screenshots/product-listings.png)
-
-### 🔍 Product Details
-![Product Details Screenshot](screenshots/product-details.png)
+![Product Listings Screenshot](./frontend/public/screenshots/product-listings.png)
 
 ### ➕ Create Listing
-![Create Listing Screenshot](screenshots/create-listing.png)
+![Create Listing Screenshot](./frontend/public/screenshots/create-listing.png)
 
 ---
 
