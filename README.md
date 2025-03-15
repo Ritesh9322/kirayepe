@@ -1,4 +1,6 @@
-# ReBazaar – Resell, Reuse, Rejoice! 🛍️
+# ♻️ ReBazaar – Resell, Reuse, Rejoice! 🛍️✨  
+<img src="./frontend/public/rebuy.gif" width="800px" alt="ReBazaar Overview">
+
 
 ## 🌟 Description
 
