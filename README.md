@@ -17,40 +17,41 @@ Welcome to **ReBazaar** – a web application for buying and selling secondhand 
 ## 📁 Folder Structure 📂
 
 ```
-backend/  
-├── config/               # ⚙️ Configuration files 🛠️  
-│   ├── db.js             # 🛢️ Database connection (MongoDB setup)  
-├── middleware/           # 🔒 Middleware for authentication & security  
-│   ├── auth.js           # 🛡️ Middleware for protecting routes  
-├── models/               # 🗂️ Mongoose models  
-│   ├── User.js           # 👤 User model schema (Stores user details)  
-│   ├── Product.js        # 📦 Product model schema (Stores product details)  
-├── routes/               # 🛣️ API routes  
-│   ├── authRoutes.js     # 🔐 Routes for user authentication (Login/Register)  
-│   ├── productRoutes.js  # 🏷️ Routes for managing product listings  
-├── .env                  # 🌍 Environment variables (Secrets & Configurations)  
-├── package.json          # 📦 Backend dependencies & scripts  
-├── server.js             # 🚀 Main server file (Express app entry point) 
-
-
-frontend/  
-├── src/                  # 🎨 Source files for Angular application  
-│   ├── app/              # 🏗️ Main application components  
-│   │   ├── guards/       # 🛡️ Route guards for authentication & authorization  
-│   │   ├── models/       # 📌 TypeScript interfaces & models  
-│   │   ├── services/     # 🔄 Core services used across the app  
-│   ├── components/       # 🧩 Reusable components  
-│   │   ├── login/        # 🔑 Login component  
-│   │   ├── register/     # 📝 Registration component  
-│   │   ├── product-create/  # ➕ Create product listing component  
-│   │   ├── product-list/    # 📜 Display product listings component  
-│   │   ├── profile/         # 👤 User profile component  
-│   ├── styles.css        # 🎨 Global styles  
-│   └── index.html        # 📜 Main HTML file  
-├── package.json          # 📦 Frontend dependencies  
-└── angular.json          # ⚙️ Angular configuration  
-
-README.md # Documentation file that provides an overview of a project.
+REBAZAAR
+|    backend/  
+|    ├── config/               # ⚙️ Configuration files 🛠️  
+|    │   ├── db.js             # 🛢️ Database connection (MongoDB setup)  
+|    ├── middleware/           # 🔒 Middleware for authentication & security  
+|    │   ├── auth.js           # 🛡️ Middleware for protecting routes  
+|    ├── models/               # 🗂️ Mongoose models  
+|    │   ├── User.js           # 👤 User model schema (Stores user details)  
+|    │   ├── Product.js        # 📦 Product model schema (Stores product details)  
+|    ├── routes/               # 🛣️ API routes  
+|    │   ├── authRoutes.js     # 🔐 Routes for user authentication (Login/Register)  
+|    │   ├── productRoutes.js  # 🏷️ Routes for managing product listings  
+|    ├── .env                  # 🌍 Environment variables (Secrets & Configurations)  
+|    ├── package.json          # 📦 Backend dependencies & scripts  
+|    ├── server.js             # 🚀 Main server file (Express app entry point) 
+|
+|
+|   frontend/  
+|    ├── src/                     # 🎨 Source files for Angular application  
+|    │   ├── app/                 # 🏗️ Main application components  
+|    │   │   ├── guards/          # 🛡️ Route guards for authentication & authorization  
+|    │   │   ├── models/          # 📌 TypeScript interfaces & models  
+|    │   │   ├── services/        # 🔄 Core services used across the app  
+|    │   ├── components/          # 🧩 Reusable components  
+|    │   │   ├── login/           # 🔑 Login component  
+|    │   │   ├── register/        # 📝 Registration component  
+|    │   │   ├── product-create/  # ➕ Create product listing component  
+|    │   │   ├── product-list/    # 📜 Display product listings component  
+|    │   │   ├── profile/         # 👤 User profile component  
+|    │   ├── styles.css           # 🎨 Global styles  
+|    │   └── index.html           # 📜 Main HTML file  
+|    ├── package.json             # 📦 Frontend dependencies  
+|    └── angular.json             # ⚙️ Angular configuration  
+|
+└──README.md # Documentation file that provides an overview of a project
 ```
 
 ---
