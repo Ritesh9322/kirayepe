@@ -125,11 +125,12 @@ ng serve
 - `POST /api/auth/login` ➡️ Log in a user 🔐
 - `POST /api/auth/register` ➡️ Register a new user 📝
 
-### 📦 Products
-- `GET /api/products` ➡️ Get a list of products 📜
-- `GET /api/products/:id` ➡️ Get details of a specific product 🔍
-- `POST /api/products` ➡️ Create a new product ➕
+### 📦 Products API Endpoints
+- `GET /api/products` ➡️ Retrieve a list of all products 📜
+- `POST /api/products/create` ➡️ Add a new product ➕
 
+### 👤 Profile API Endpoints
+- `GET /api/profile` ➡️ Retrieve user profile details 👤
 ---
 
 ## 🧪 Testing Instructions
@@ -162,6 +163,9 @@ Here are some screenshots of **ReBazaar**:
 
 ### 📝 Register Page
 ![Register Screenshot](./frontend/public/screenshots/signup.png)
+
+### Profile
+![Profile](./frontend/public/screenshots/profile.png)
 
 ### 🛒 Product Listings
 ![Product Listings Screenshot](./frontend/public/screenshots/product-listings.png)
