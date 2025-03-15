@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <header>
   <div class="logo">
     <h1>
       <a routerLink="/products">ReBazaar 
-        <img src="/rebuy.gif" alt="Recycle Icon" class="recycle-icon">
+        <img src="/rebuy.gif" alt="Recycle Icon" class="recycle-icon" draggable="false">
       </a>
     </h1>
     
@@ -11,7 +12,7 @@
   </div>
 
   <div class="category-selection">
-    <label for="category">Select Category:</label>
+    <label for="category">Category:</label>
     <select id="category" (change)="onCategoryChange($event)">
       <option value="">All</option>
       <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
@@ -21,7 +22,8 @@
   <div class="search-container">
     <input type="text" placeholder="Search products..." class="search-input">
     <button class="search-button" title="Search">
-      <i class="fas fa-search"></i>
+      <i class="fa-solid fa-search"></i>
+
     </button>
   </div>
 

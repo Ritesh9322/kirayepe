@@ -1,5 +1,4 @@
 <div class="container">
-
   <div class="form-section">
     <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
       <h2>Register</h2>
@@ -7,10 +6,12 @@
       <div *ngIf="errorMessage" class="error-message">
         {{ errorMessage }}
       </div>
-      
+
+      <!-- Username Field -->
       <div class="input-container">
         <label for="username">Username:</label>
         <div class="input-wrapper">
+          <i class="fas fa-user input-icon"></i>
           <input 
             type="text" 
             id="username" 
@@ -29,10 +30,11 @@
         </div>
       </div>
 
-    
+      <!-- Email Field -->
       <div class="input-container">
         <label for="email">Email:</label>
         <div class="input-wrapper">
+          <i class="fas fa-envelope input-icon"></i>
           <input 
             type="email" 
             id="email" 
@@ -52,10 +54,11 @@
         </div>
       </div>
 
-  
+      <!-- Password Field -->
       <div class="input-container">
         <label for="password">Password:</label>
         <div class="input-wrapper">
+          <i class="fas fa-lock input-icon"></i>
           <input 
             type="password" 
             id="password" 
@@ -80,7 +83,6 @@
       <p class="login-link">
         Already have an account? <span (click)="goToLogin()" class="login-text">Login</span>
       </p>
-      
     </form>
   </div>
 </div>

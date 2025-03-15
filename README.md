@@ -1,6 +1,6 @@
 # ReBazaar – Resell, Reuse, Rejoice! 🛍️✨  
-<img src="./frontend/public/rebuy.gif" width="400px" alt="ReBazaar">
 
+<img src="./frontend/public/rebuy.gif" width="400px" alt="ReBazaar">
 
 ## 🌟 Description
 
@@ -58,23 +58,28 @@ README.md # Documentation file that provides an overview of a project.
 ## 🚀 Installation Instructions
 
 ### ✅ Prerequisites
+
 - 🟢 **Node.js** (version 14 or higher)
 - 🍃 **MongoDB** (installed and running)
 
 ### 📥 Clone the repository
+
 ```bash
 git clone https://github.com/Satyaamp/ReBazaar.git
 cd rebazaar
 ```
 
 ### 📌 Backend Setup
+
 1️⃣ Navigate to the backend directory and install dependencies:
+
 ```bash
 cd backend
 npm install
 ```
 
 2️⃣ Create a `.env` file in the backend directory with the following content:
+
 ```ini
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
@@ -82,7 +87,9 @@ PORT=3000
 ```
 
 ### 🎨 Frontend Setup
+
 1️⃣ Navigate to the frontend directory and install dependencies:
+
 ```bash
 cd ../frontend
 npm install
@@ -97,24 +104,28 @@ npm install
 You can start the backend server using one of the following commands:
 
 For production:
+
 ```bash
 cd backend
 node server.js
 ```
 
 For development (auto-restart on changes):
+
 ```bash
 cd backend
 nodemon server.js
 ```
 
 ### 🚀 Start the frontend application
+
 ```bash
 cd frontend
 ng serve
 ```
 
-### 🌐 Open your browser and navigate to:
+### 🌐 Open your browser and navigate to
+
 `http://localhost:4200`
 
 ---
@@ -122,15 +133,19 @@ ng serve
 ## 🔍 API Endpoints
 
 ### 🔑 Authentication
+
 - `POST /api/auth/login` ➡️ Log in a user 🔐
 - `POST /api/auth/register` ➡️ Register a new user 📝
 
 ### 📦 Products API Endpoints
+
 - `GET /api/products` ➡️ Retrieve a list of all products 📜
 - `POST /api/products/create` ➡️ Add a new product ➕
 
 ### 👤 Profile API Endpoints
+
 - `GET /api/profile` ➡️ Retrieve user profile details 👤
+
 ---
 
 ## 🧪 Testing Instructions
@@ -138,12 +153,14 @@ ng serve
 📌 To run tests, navigate to the backend or frontend directory and use the following commands:
 
 - **Backend Tests**
+
 ```bash
 cd backend
 npm test
 ```
 
 - **Frontend Tests**
+
 ```bash
 cd frontend
 ng test
@@ -156,21 +173,27 @@ ng test
 Here are some screenshots of **ReBazaar**:
 
 ### 🏠 Homepage
+
 ![Homepage Screenshot](./frontend/public/screenshots/homepage.png)
 
 ### 🔐 Login Page
+
 ![Login Screenshot](./frontend/public/screenshots/login.png)
 
 ### 📝 Register Page
+
 ![Register Screenshot](./frontend/public/screenshots/signup.png)
 
 ### Profile
+
 ![Profile](./frontend/public/screenshots/profile.png)
 
 ### 🛒 Product Listings
+
 ![Product Listings Screenshot](./frontend/public/screenshots/product-listings.png)
 
 ### ➕ Create Listing
+
 ![Create Listing Screenshot](./frontend/public/screenshots/create-listing.png)
 
 ---
@@ -194,4 +217,4 @@ Here are some screenshots of **ReBazaar**:
 
 ---
 
-🚀 **ReSell, ReUse, ReJoice!** ♻️🛒
+🚀 **ReSell, ReUse, ReJoice!** 🛒

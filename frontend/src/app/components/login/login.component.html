@@ -1,22 +1,56 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 <div class="container">
   <div class="form-section">
     <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
       <h2>Login</h2>
-      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" [(ngModel)]="loginData.email" required>
-      </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" [(ngModel)]="loginData.password" required>
-      </div>
-      <button type="submit" [disabled]="!loginForm.form.valid">Login</button>
       
+      <!-- Error Message -->
+      <div *ngIf="errorMessage" class="error-message">
+        <i class="fa-solid fa-triangle-exclamation"></i> {{ errorMessage }}
+      </div>
+
+      <!-- Email Input -->
+      <div class="input-container" [ngClass]="{'error-border': email.invalid && email.touched}">
+        <i class="fa-solid fa-envelope"></i>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          [(ngModel)]="loginData.email" 
+          #email="ngModel"
+          placeholder="Email" 
+          required>
+      </div>
+      <div *ngIf="email.invalid && email.touched" class="error-message">
+        <i class="fa-solid fa-triangle-exclamation"></i> Please enter a valid email.
+      </div>
+
+      <!-- Password Input -->
+      <div class="input-container" [ngClass]="{'error-border': password.invalid && password.touched}">
+        <i class="fa-solid fa-lock"></i>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          [(ngModel)]="loginData.password" 
+          #password="ngModel"
+          placeholder="Password" 
+          required>
+      </div>
+      <div *ngIf="password.invalid && password.touched" class="error-message">
+        <i class="fa-solid fa-triangle-exclamation"></i> Password is required.
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit" [disabled]="!loginForm.form.valid">
+        <i class="fa-solid fa-right-to-bracket"></i> Login
+      </button>
+
       <p class="register-link">
-        Not registered? <span (click)="goToRegister()" class="signup-text">Sign up here</span>
+        Not registered? 
+        <span (click)="goToRegister()" class="signup-text">Sign up here</span>
       </p>
-      
     </form>
   </div>
 </div>
