@@ -1,0 +1,177 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure Page Doesn't Scroll Horizontally */
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background-color: #f5f5f5; /* Light background for contrast */
+}
+
+/* Ensure Header Stays Inside Page */
+header {
+  background: linear-gradient(135deg, #0288d1, #026aa7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1000;
+  border-radius: 0 0 10px 10px; 
+}
+
+.recycle-icon {
+  width: 30px; /* Adjust size */
+  height: auto;
+  vertical-align: middle; /* Aligns icon with text */
+  margin-left: 5px; /* Adds spacing */
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.verified {
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffeb3b;
+}
+
+
+.category-selection {
+  display: flex;
+  align-items: center;
+}
+
+.category-selection label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.category-selection select {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  width: 200px;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0288d1;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+nav button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+nav button:hover {
+  background: #e64a19;
+}
+
+/* SELL Button (Login required) */
+nav a[title="Sell a Product"] {
+  background-color: #04AA6D;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav a[title="Sell a Product"]:hover {
+  background-color: #038a57;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
