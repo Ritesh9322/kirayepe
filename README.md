@@ -52,7 +52,7 @@ frontend/
 
 ### 📥 Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/Satyaamp/ReBazaar.git
 cd rebazaar
 ```
 
