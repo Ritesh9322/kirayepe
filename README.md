@@ -17,7 +17,6 @@ Welcome to **ReBazaar** – a web application for buying and selling secondhand 
 ## 📁 Folder Structure 📂
 
 ```
-backend/
 backend/  
 ├── config/               # ⚙️ Configuration files 🛠️  
 │   ├── db.js             # 🛢️ Database connection (MongoDB setup)  
