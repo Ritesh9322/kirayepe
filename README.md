@@ -51,6 +51,7 @@ frontend/
 ├── package.json          # 📦 Frontend dependencies  
 └── angular.json          # ⚙️ Angular configuration  
 
+README.md # Documentation file that provides an overview of a project.
 ```
 
 ---
