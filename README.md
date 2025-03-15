@@ -1,12 +1,14 @@
-# 🛍️ Secondhand Marketplace
+# ♻️ ReBazaar – Resell, Reuse, Rejoice! 🛍️
 
 ## 🌟 Description
 
-Welcome to **Secondhand Marketplace** – a web application for buying and selling secondhand items! 🏷️💰 This platform allows users to:
+Welcome to **ReBazaar** – a web application for buying and selling secondhand items! 🔄🏷️💰 This platform allows users to:
 
 ✅ Register & Log in 🔐  
 ✅ Create & Manage Product Listings 📦  
 ✅ Browse Available Products 🛒
+
+🌱 **Resell, Reuse, Rejoice!** 🌎
 
 ---
 
@@ -44,7 +46,7 @@ frontend/
 ### 📥 Clone the repository
 ```bash
 git clone <repository-url>
-cd secondhand-market
+cd rebazaar
 ```
 
 ### 📌 Backend Setup
@@ -120,6 +122,30 @@ ng test
 
 ---
 
+## 📸 Screenshots
+
+Here are some screenshots of **ReBazaar**:
+
+### 🏠 Homepage
+![Homepage Screenshot](./frontend/public/screenshots/homepage.png)
+
+### 🔐 Login Page
+![Login Screenshot](screenshots/login.png)
+
+### 📝 Register Page
+![Register Screenshot](screenshots/register.png)
+
+### 🛒 Product Listings
+![Product Listings Screenshot](screenshots/product-listings.png)
+
+### 🔍 Product Details
+![Product Details Screenshot](screenshots/product-details.png)
+
+### ➕ Create Listing
+![Create Listing Screenshot](screenshots/create-listing.png)
+
+---
+
 ## ⚠️ Known Issues
 
 ❌ Currently, the application **does not support image uploads** for product listings.  
@@ -139,5 +165,4 @@ ng test
 
 ---
 
-🚀 **Happy Buying & Selling!** 🛒🎉
-
+🚀 **ReSell, ReUse, ReJoice!** ♻️🛒
