@@ -7,14 +7,14 @@ import { Product } from '../models/product.model';
   providedIn: 'root'
 })
 export class ProductService {
-  // private apiUrl = 'http://localhost:3000/api/products';
-  private apiUrl = 'https://rebazaar-tyq2.onrender.com';
+  private apiUrl = 'http://localhost:3000/api/products';
+
 
   constructor(private http: HttpClient) { }
 
   getProducts(category: string = ''): Observable<Product[]> {
-    // let url = 'http://localhost:3000/api/products'; // Adjust based on backend
-    let url = 'https://rebazaar-tyq2.onrender.com';
+    let url = 'http://localhost:3000/api/products'; // Adjust based on backend
+  
     if (category) {
       url += `?category=${category}`;
     }
