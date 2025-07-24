@@ -20,11 +20,14 @@ app.get("/", (_req, res) => {
 });
 
 // ----- SINGLE MongoDB connection -----
-mongoose.connect(process.env.MONGO_URI, {
-  serverSelectionTimeoutMS: 10000, // gives more time to handshake
-})
-.then(() => console.log("✅ MongoDB Connected Successfully"))
-.catch((err) => console.error("❌ MongoDB Connection Failed:", err));
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true, // optional in newer versions
+    serverSelectionTimeoutMS: 10000, // optional but helpful
+  })
+  .then(() => console.log("✅ MongoDB Connected Successfully"))
+  .catch((err) => console.error("❌ MongoDB Connection Failed:", err));
 
 // Start server
 const authRoutes = require("./routes/auth");

@@ -1,44 +1,40 @@
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-export default function Signup() {
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
-  const [msg, setMsg] = useState("");
+const Signup = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", password: "" });
   const navigate = useNavigate();
 
   const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const { data } = await axios.post(
-        "http://localhost:5000/api/auth/signup",
-        form
-      );
-      localStorage.setItem("token", data.token);   // 🔑 save JWT
-      navigate("/dashboard");
-    } catch (err) {
-      setMsg(err.response?.data?.msg || "Signup failed");
+
+    const res = await fetch("http://localhost:5000/api/auth/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+    if (data.message === "User created successfully") {
+      alert("Signup successful. Please login.");
+      navigate("/login");
+    } else {
+      alert(data.message || "Signup failed");
     }
   };
 
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <h2>Signup</h2>
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Name" onChange={handleChange} /><br />
-        <input name="email" placeholder="Email" onChange={handleChange} /><br />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          onChange={handleChange}
-        /><br />
-        <button type="submit">Register</button>
-      </form>
-      <p>{msg}</p>
-    </div>
+      <input name="name" placeholder="Name" onChange={handleChange} required />
+      <input name="email" placeholder="Email" onChange={handleChange} required />
+      <input name="password" type="password" placeholder="Password" onChange={handleChange} required />
+      <button type="submit">Signup</button>
+    </form>
   );
-}
+};
+
+export default Signup;
