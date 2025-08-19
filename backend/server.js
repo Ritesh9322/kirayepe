@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true })); // For form data
 
 // ✅ MongoDB Connection
 mongoose.connect(config.mongoURI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
 })
 .then(() => console.log('MongoDB Connected...'))
 .catch(err => console.log('MongoDB Connection Error:', err));

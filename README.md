@@ -1,16 +1,17 @@
-# ReBazaar – Resell, Reuse, Rejoice! 🛍️✨  
+# KirayePe – Rent, Share, Save! 🏠🛍️✨  
 
-<img src="./frontend/public/rebuy.gif" width="400px" alt="ReBazaar">
+<img src="./frontend/public/rebuy.gif" width="400px" alt="KirayePe">
 
 ## 🌟 Description
 
-Welcome to **ReBazaar** – a web application for buying and selling secondhand items! 🔄🏷️💰 This platform allows users to:
+Welcome to **KirayePe** – a comprehensive platform for renting and sharing items! 🔄🏠💰 This platform allows users to:
 
 ✅ Register & Log in 🔐  
-✅ Create & Manage Product Listings 📦  
-✅ Browse Available Products 🛒
+✅ List & Manage Rental Items 📦  
+✅ Browse & Rent Available Products 🛒  
+✅ Share Resources & Save Money 💸
 
-🌱 **Resell, Reuse, Rejoice!** 🌎
+🌱 **Rent, Share, Save!** 🌎
 
 ---
 
