@@ -67,7 +67,7 @@ REBAZAAR
 ### 📥 Clone the repository
 
 ```bash
-git clone https://github.com/Satyaamp/ReBazaar.git
+git clone https://github.com/Ritesh9322/kirayepe
 cd rebazaar
 ```
 
@@ -191,3 +191,4 @@ ng test
 
 
 🚀 **ReSell, ReUse, ReJoice!** 🛒
+
