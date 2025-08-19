@@ -168,37 +168,7 @@ cd frontend
 ng test
 ```
 
----
 
-## 📸 Screenshots
-
-Here are some screenshots of **ReBazaar**:
-
-### 🏠 Homepage
-
-![Homepage Screenshot](./frontend/public/screenshots/homepage.png)
-
-### 🔐 Login Page
-
-![Login Screenshot](./frontend/public/screenshots/login.png)
-
-### 📝 Register Page
-
-![Register Screenshot](./frontend/public/screenshots/signup.png)
-
-### Profile
-
-![Profile](./frontend/public/screenshots/profile.png)
-
-### 🛒 Product Listings
-
-![Product Listings Screenshot](./frontend/public/screenshots/product-listings.png)
-
-### ➕ Create Listing
-
-![Create Listing Screenshot](./frontend/public/screenshots/create-listing.png)
-
----
 
 ## ⚠️ Known Issues
 
@@ -218,5 +188,6 @@ Here are some screenshots of **ReBazaar**:
 📄 This project is licensed under the **MIT License**. Feel free to use and modify it! 🎉
 
 ---
+
 
 🚀 **ReSell, ReUse, ReJoice!** 🛒
